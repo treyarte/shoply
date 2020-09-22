@@ -1,0 +1,22 @@
+.product-nav {
+  background-color: #056674;
+  padding: 1rem;
+}
+
+.product-nav {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.product-nav a {
+  color: #e0ece4;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+.product-nav a:hover {
+  color: #ff4b5c;
+}

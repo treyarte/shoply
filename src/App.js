@@ -1,13 +1,13 @@
 import React from 'react';
-import Catalog from './Catalog';
-import CartIcon from './CartIcon';
+import Routes from './Routes';
+import NavBar from './NavBar';
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
-      <CartIcon />
-      <Catalog />
+      <NavBar />
+      <Routes />
     </div>
   );
 }

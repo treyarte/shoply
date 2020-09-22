@@ -1,32 +1,49 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { add_to_cart, remove_from_cart } from './actions';
+import CustomButton from './CustomButton';
 import './ProductCard.css';
-import { Card, CardBody, CardImg, CardText, Button } from 'reactstrap';
+import {
+  Card,
+  CardBody,
+  CardImg,
+  CardText,
+  Button,
+  CardTitle,
+} from 'reactstrap';
 
 const ProductCard = ({ product, handleAddCart, handleRemoveCart }) => {
   const { id, name, image_url, price } = product;
+
   return (
-    <div className='col-md-3 product-card'>
+    <div className='col-md-2 product-card'>
       <Card>
         <CardBody>
-          <CardText>{name}</CardText>
-          <CardImg src={image_url} width='100%' />
-          <CardText>Price: ${price}</CardText>
-          <Button
-            onClick={() =>
+          <Link to={`/products/${id}`}>
+            <CardTitle>
+              <h4>{name}</h4>
+            </CardTitle>
+          </Link>
+
+          <div>
+            <CardText>Price: ${price}</CardText>
+          </div>
+          <CustomButton
+            onClickAction={() =>
               handleAddCart({
                 ...product,
               })
             }
             color='primary'
-          >
-            Add
-          </Button>
-          <Button
+            btnName='🛒 Add'
+          />
+
+          <CustomButton
+            onClickAction={() => handleRemoveCart({ ...product })}
             color='danger'
-            onClick={() => handleRemoveCart({ ...product })}
-          >
-            Remove
-          </Button>
+            btnName='Remove 🛒'
+          />
         </CardBody>
       </Card>
     </div>

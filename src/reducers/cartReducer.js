@@ -1,4 +1,3 @@
-import { products } from '../data.json';
 import { ADD_TO_CART, REMOVE_FROM_CART } from '../actionTypes';
 
 const INITIAL_STATE = {

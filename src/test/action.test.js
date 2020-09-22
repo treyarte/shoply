@@ -1,5 +1,5 @@
-import { add_to_cart, remove_from_cart } from './actions';
-import { ADD_TO_CART, REMOVE_FROM_CART } from './actionTypes';
+import { add_to_cart, remove_from_cart } from '../actions';
+import { ADD_TO_CART, REMOVE_FROM_CART } from '../actionTypes';
 
 describe('cart actions', () => {
   it('should create an action to add an item to the cart', () => {
