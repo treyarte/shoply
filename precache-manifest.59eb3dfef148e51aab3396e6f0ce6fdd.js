@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "723f64c24c4e04752166739dfcf2a12d",
+    "revision": "a66084e12a2bae8cc246089ca9f00217",
     "url": "/shoply/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shoply/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "5e817015efb761d57ec4",
+    "revision": "29f5d170c70e266ba076",
     "url": "/shoply/static/css/main.aae606f5.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shoply/static/js/2.1fafe006.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5e817015efb761d57ec4",
-    "url": "/shoply/static/js/main.a83cf779.chunk.js"
+    "revision": "29f5d170c70e266ba076",
+    "url": "/shoply/static/js/main.b4ec46a6.chunk.js"
   },
   {
     "revision": "dc642e06ded8d3c31fc8",
