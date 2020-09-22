@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className='product-nav'>
-        <NavLink exact to='/'>
+        <NavLink exact to='/shoply'>
           <h4>Shoply</h4>
         </NavLink>
         <div className='cart-nav'>

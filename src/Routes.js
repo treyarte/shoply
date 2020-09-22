@@ -26,7 +26,7 @@ const Routes = () => {
       </Route>
       <Route exact path='/products/:id'>
         <Product
-          cantFind='/'
+          cantFind='/shoply'
           handleRemoveCart={handleRemoveCart}
           handleAddCart={handleAddCart}
         />
