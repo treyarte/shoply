@@ -18,7 +18,7 @@ const Routes = () => {
   };
   return (
     <Switch>
-      <Route exact path='/'>
+      <Route exact path='/shoply'>
         <Catalog
           handleAddCart={handleAddCart}
           handleRemoveCart={handleRemoveCart}
@@ -37,7 +37,7 @@ const Routes = () => {
           handleAddCart={handleAddCart}
         />
       </Route>
-      <Redirect to='/' />
+      <Redirect to='/shoply' />
     </Switch>
   );
 };
